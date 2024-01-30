@@ -1,0 +1,26 @@
+ <!--Partie sur A propos de nous-->
+{% for About in about %}
+    {% if About %}
+        <div class="apropos">
+          <img src="{{ asset('uploads/' ~ About.illustration) }}" alt="{{ About.illustration }}" class="img-fluid">
+          <ul class="apropos2">
+            <li><h5>{{ About.title }}</h5></li>
+            <li><h2>{{ About.subtitle }}</h2></li>
+            <li><p>{{ About.description | raw }}</p></li>
+    {% endif %}
+{% endfor %}
+            <div class="row py-2">
+            {% for Supports in supports %}
+                {% if Supports %}
+                    <div class="col-sm-6">
+                        <i class="{{ Supports.icon }} font-weight-normal flatip d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></i>
+                        <h6 class="black">{{ Supports.title }}</h6>
+                        <p>{{ Supports.description | raw}}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+            <button class="button">Apprendre encore plus</button>
+          </ul>
+      </div>
+      

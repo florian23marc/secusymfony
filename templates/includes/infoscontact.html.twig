@@ -1,0 +1,41 @@
+
+
+<header>
+      <nav>
+        <ul class="navigation">
+          <li class="coteG">Horaires d'ouvertures: 8h00 - 21h00</li>
+          <li class="coteD">Suivez nous:</li>
+          <li class="coteD"><i class="fa-brands fa-facebook-f"></i></li>
+          <li class="coteD"><i class="fa-brands fa-twitter"></i></li>
+          <li class="coteD"><i class="fa-brands fa-linkedin-in"></i></li>
+          <li class="coteD"><i class="fa-brands fa-instagram"></i></li>
+          <li class="coteD"><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+      </nav> 
+     <div class="container1">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="logo mb-3 mb-md-0">
+            {% for logo in logo %}
+              {% if logo %}
+                <img src="{{ asset('uploads/' ~ logo.illustration) }}" alt="{{ logo.illustration }}" class="img-fluid">
+              {% endif %}
+            {% endfor %}
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-end">
+              <div class="d-flex flex-row-reverse">
+                {% for infoContact in infosContact %}
+                  {% if infoContact %}
+                    <div class="p-2 pr-3 border-end text-center text-md-right">
+                      <b>{{ infoContact.title }}</b><br>{{ infoContact.description|raw }}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </header>

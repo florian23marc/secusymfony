@@ -1,0 +1,16 @@
+<!--Partie sur les chiffres de l'entreprise-->
+  <div class="infos">
+    <ul>
+    {% for Stat in statistic %}
+            {% if Stat %}
+                <li>
+                    <!--<i class="fa-solid fa-user-shield"></i>-->
+                    <i class="{{ Stat.icon }}"></i>
+                    <h3>{{ Stat.value }}</h3>
+                    <p>{{ Stat.category }}</p>
+                </li>
+            {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+</div>

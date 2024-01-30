@@ -1,0 +1,65 @@
+     <!--carousel slide 1-->
+     <div class="col-md-12">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+         {% for car in infosCarousel %}
+              {% if car %}
+          <img src="{{ asset('uploads/' ~ car.image) }}" alt="{{ car.image }}" class="img-fluid">
+           {% endif %}
+            {% endfor %}
+        <div class="carousel-item active">
+          <div class="partie1">
+            <nav class="navigation3">
+              <ul class="ul1">
+                <li class="orange">Maison</li>
+                <li>A propos</li>
+                <li>Prestations de service</li>
+                <li>Gardes</li>
+                <li>Pages</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+            <div class="text-uppercase text-center">
+              <div class="grandtitre">
+                <h1 class="autreh1">VOTRE SECURITE, NOS EFFORTS</h1>
+                <h2>GARDES HAUTEMENTS QUALIFIES</h2>
+                <button class="button">Apprendre encore plus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--carousel slide 2-->
+        <div class="carousel-item">
+          <div class="partie2">
+            <nav class="navigation3">
+              <ul class="ul1">
+                <li class="orange">Maison</li>
+                <li>A propos</li>
+                <li>Prestations de service</li>
+                <li>Gardes</li>
+                <li>Pages</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+            <div class="text-uppercase text-center">
+              <div class="grandtitre">
+                <h1>VOTRE SECURITE, NOS EFFORTS</h1>
+                <h2>GARDES HAUTEMENTS QUALIFIES</h2>
+                <button class="button">Apprendre encore plus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+

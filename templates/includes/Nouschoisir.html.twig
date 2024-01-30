@@ -1,0 +1,44 @@
+<!--Partie sur Pourquoi nous choisir-->
+        <div class="section">
+                    <section class="container mb-5">
+                      <div class=" d-flex mt-5">
+                          <div class="mt-5 w-100 h-100">
+                              <h5 class="orange">POURQUOI NOUS CHOISIR</h5>
+                              <h2>SECURIT&Eacute DE HAUT NIVEAU</h2>
+                              <div class="card mb-2 p-3 w-120 custom">
+                              <img class="card-img-top" src="assets/images/feature.webp" alt="image de tour avec homme" style="width: 100%; height: auto">
+                              </div>
+                              <p class="citation">Ea tempor ipsum kasd clita. Sea diam amet et rebum sit stet, vero sea est diam et ea sit
+                                  ea no
+                              </p>
+                              <button class="button">Apprendre encore plus</button>
+                          </div>
+                          <div class="my-3">
+                          {% for Choix in choix %}
+                             {% if Choix %}
+                              <div class="m-5 d-flex">
+                                  <h3 class="flaticon-policeman font-weight-normal flati d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                                  <div class="ms-2">
+                                      <h6>{{ Choix.title }}</h6>
+                                      <P>{{ Choix.description | raw }}</P>
+                                  </div>
+                              </div>
+                             {% endif %}
+                           {% endfor %}
+                          </div>
+                          <div class="my-3">
+                          {% for Choix in choix %}
+                             {% if Choix %}
+                              <div class="m-5 d-flex">
+                                <h3 class="flaticon-bodyguard font-weight-normal flati d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                                  <div class="ms-2">
+                                      <h6>{{ Choix.title }}</h6>
+                                      <P>{{ Choix.description | raw }}</P>
+                                  </div>
+                              </div>
+                              {% endif %}
+                           {% endfor %}
+                          </div>
+                      </div>
+                  </section>
+                  </div>

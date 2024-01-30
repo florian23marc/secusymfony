@@ -1,0 +1,35 @@
+ <!--Partie sur les agents de sécurité -->
+        <div class="container-fluid services py-0">
+          <div class="container py-3">
+              <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+          </div>
+          <div class="text-uppercase text-center">
+          <h5 class="orange">AGENTS DE SECURITE</h5>
+          <h2>RENCONTREZ NOS AGENTS DE SECURITE</h2>
+          </div>
+              <div class="row g-4">
+                 {% for Personnel in personnel %}
+                     {% if Personnel %}
+                  <div class="col-lg-6">
+                      <div class="services-item p-4 align-content-end">
+                          <div class="row align-items-center">
+                              <div class="col-8">
+                                  <div class="services-content text-end">
+                                    <h4>{{ Personnel.officerName }}</h4>
+                                      <p>{{ Personnel.description | raw }}</p>
+                                      <div class="rs"><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-instagram"></i></div>
+                                  </div>
+                              </div>
+                              <div class="col-4">
+                                  <div class="services-img d-flex align-items-center justify-content-right">
+                                      <img src="{{ asset('uploads/' ~ Personnel.illustration) }}" alt="{{ Personnel.illustration }}" class="img-thumbnail">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                    {% endif %}
+             {% endfor %}
+             </div>
+          </div>
+        </div>

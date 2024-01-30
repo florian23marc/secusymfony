@@ -1,0 +1,19 @@
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex flex-wrap">
+{% for certifications in certification %}
+    {% if certifications %}
+                    <div class="p-2 pr-1 border-end flex-grow-1 col-md-4">
+                        <div class="d-flex align-items-center">
+                            <i class=" {{ certifications.icon }} flati1"></i>
+                            <div class="ms-3">
+                                <h5 class="m-0 mb-2">{{ certifications.title }}</h5>
+                                <p>{{ certifications.description | raw }}</p>
+                            </div>
+                        </div>
+                    </div>
+    {% endif %}
+{% endfor %}
+                </div>
+            </div>
+        </div>

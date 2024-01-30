@@ -1,3 +1,463 @@
-body {
-    background-color: skyblue;
-}
+/*Voici le première nav bar en haut de page*/
+.navigation {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    height: 110%; 
+  }
+  .coteG {
+    margin-right: auto; /*Element de la navbar du coté Gauche*/
+    color:white;
+    margin-left:25px;
+  }
+  .coteD {
+    margin-right: 10px; /*Element de la navbar du coté Droit*/
+    color:white;
+    margin-right:15px;
+  }
+  /*Voici le carousel*/
+
+  #slogan {
+    padding-top: 60%;
+    text-align: center;
+  }
+  
+  /*.partie1{
+    background-image: url('carousel-2.jpg'); 
+    list-style: none;
+    height: 800px;
+    background-size: cover;
+  }*/
+  .partie1 h1{
+    color: white;
+    margin-top: 80px;
+    margin-left: 270px;
+  }
+  .partie2{
+    background-image: url('carousel-1.jpg'); /*Fond d'image pour la 2 eme slide du carousel */
+    list-style: none;
+    height: 800px;
+    background-size: cover;
+  }
+  .navigation3{ /*Barre de navigation au sein du carousel*/
+    display: flex;
+    justify-content: center;
+  }
+  .navigation3 li{
+    padding: 10px;
+  }
+  .ul1{ /*Liens et items au sein de la barre de navigation*/
+    display: flex;
+    margin-right: 3px;
+    justify-content: space-evenly
+  }
+  .orange{
+    color: #E45F4E;
+  }
+  .grandtitre{
+    margin-top: 250px;
+  }
+  .grandtitre .autreh1{ /*H1 de la première slide*/
+    color: #E45F4E;
+    font-size: 17px;
+    margin-left: 30px;
+  }
+  .grandtitre h1{ /*h1 de la deuxième slide*/
+    color: #E45F4E;
+    font-size: 17px;
+  }
+  .grandtitre h2{
+    color: white;
+  }
+  .grandtitre button{
+    margin-top: 20px;
+    border: none;
+    padding: 8px 20px; 
+    text-align: center;
+  }
+  button{
+      background-color: #E45F4E;
+      color: white;
+  }
+  li{
+    color: white; 
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /*Partie sur a propos de nous et l'expérience*/
+  
+  .button{
+    margin-top: 20px;
+    border: none;
+    padding: 8px 20px; 
+    text-align: center;
+  }
+  
+  /*Partie en dessous du carrousel, informations sur l'entreprise*/
+  
+  .flati1{
+    color: #E45F4E !important; 
+    font-size: 24px !important;
+    background-color: white !important;
+  }
+  
+  
+  /*Partie sur les A Propos de l'entreprise*/
+  
+  .block {
+    background-color: #000 !important;
+  }
+  .apropos {
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .apropos img {
+    width: 50%;
+    height: auto;
+    size: cover;
+  }
+  .apropos2 {
+    max-width: 600px;
+  }
+  .apropos2 h5 {
+    color: #E45F4E;
+  }
+  .apropos2 h2 {
+    color: black;
+  }
+  .apropos2 p {
+    color: rgb(75, 72, 72);
+  }
+  .apropos2 .black {
+    color: black;
+  }
+  .flatip {
+    background-color: rgb(220, 220, 220) !important;
+    color: #E45F4E !important;
+    font-size: 40px, 40px !important;
+  }
+  .sousdiv{
+    padding-left: 34px !important;
+  }
+  
+  
+  /*Partie avec les cards sur la rubrique nos services*/
+  
+  .bloc1{
+    height: 70%;
+    width: 70%;
+    margin-left: 180px;
+  }
+  .flati {
+    background-color: #E45F4E !important;
+    color: white;
+    font-size: 20px !important;
+  }
+  
+  /*Rubrique sur les chiffres clés de l'entreprise*/
+  
+  .infos{
+  background-color: #E45F4E;
+  height: 270px;
+  }
+  .infos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top:20px;
+  }
+  .infos li {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px; /* Espace entre chaque élément */
+  margin-right: 20px; 
+  margin-top: 70px;
+  }
+  .infos li i {
+  display: block;
+  font-size: 24px; 
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px; 
+  display: inline-block;
+  width: 50px; 
+  height: 50px; 
+  }
+  /*Test*/
+  .infos2{
+    background-color: white;
+    height: 1000px;
+    }
+    .infos2 ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top:20px;
+      }
+      .infos2 li {
+      text-align: center;
+      flex: 1;
+      margin: 0 10px; /* Espace entre chaque élément */
+      margin-right: 20px; 
+      margin-top: 70px;
+      }
+      .infos2 li i {
+      display: block;
+      font-size: 24px; 
+      border: 1px solid white;
+      border-radius: 100%;
+      padding: 10px; 
+      display: inline-block;
+      width: 50px; 
+      height: 50px; 
+      }
+  
+  /*Rubrique sur Pourquoi nous choisir*/
+  
+  
+  .section {
+    padding: 20px; 
+    box-sizing: border-box; 
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* styles pour les écrans plus petits */
+  @media (max-width: 768px) {
+    .section {
+      padding: 10px; 
+    }
+  }
+  .citation{
+    color:grey;
+  }
+  .custom {
+    width: 100%;
+    height: 160%; 
+  }
+  .block2{
+    background-color: white !important;
+  }
+  .ms-2 h6{
+    color:black;
+  }
+  
+  /*Rubrique sur la Newsletter*/
+  
+  .newsletter{
+    background-color: #E45F4E;
+    height: 270px;
+  }
+  .newsletter h1{
+    color:white;   
+  }
+  .newsletter p{
+    color:white;   
+  }
+  /*Rubrique sur les agents de sécurités*/
+  
+  .rs i{
+    color:#E45F4E;
+    margin-right: 7px;
+  }
+  .rs2 {
+    display: flex;
+    gap: 10px; 
+  }
+  .rs2 i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px;
+    font-size: 14px; 
+    color: #fff; 
+    background-color: rgb(37, 37, 37);
+  }
+  .div2{
+    margin-left: 3px;
+  }
+  
+  /*Partie sur les témoignages des clients*/
+    .comment{
+      border-radius: 50%;
+      border: 10px solid white;
+      width: 26%; 
+      height: 26%;
+    }
+    .bubble-text{
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 0px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      position: relative;
+      margin-bottom: 15px; 
+    }
+    .bubble-text:before{
+      content: ''; 
+      position: absolute;
+      top: 100%; 
+      left: 16%; 
+      border: 10px solid transparent;
+      border-top-color: #fff; 
+      transform: translateX(-50%);
+    } 
+    .text-uppercase p {
+      text-transform: lowercase;
+    }
+    .text-uppercase p::first-letter {
+      text-transform: uppercase;
+    }
+    form.container-fluid{
+      max-width: 400px; 
+      margin: auto; 
+      border-radius: 0;
+    }
+    .input-group .input-group-text{
+      background-color: black; 
+      color: white; 
+      text-transform: lowercase;
+      border-radius: 0;
+      border: none;
+    }
+    .input-group .form-control{
+      border-radius: 0; 
+    }
+    h6{
+      color: #E45F4E;
+    }
+  
+  /*Partie sur le blog récent*/
+  
+  
+    .hero {
+      font-size: 20px;
+      background-color: #e45f4e;
+      color: #FFFFFF;
+      padding: 10px;
+      float: right;
+    }
+    
+    .admin {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    
+    .enssemble {
+      background-color: rgb(244, 243, 243);
+      margin-top: 0px;
+    }
+    
+    .admin i {
+      color: #e45f4e;
+    }
+    
+    
+  /*Partie sur le footer*/
+  
+  
+    a{
+      text-decoration: none; /*Pas de soulignement des liens*/
+    }
+    .imgsecu{ /* Dimenssion image la secu d'abord*/
+      width: 430px;
+    }
+  
+    /*Partie sur le footer*/
+
+    .col-8 p{
+      color:grey;
+    }
+    .basdepage{
+      display: inline-flex;
+      justify-content: space-around;
+      height: 400px;
+      margin-top: 30px;
+    }
+    .imgsecu{
+      margin-left: 40px;
+    }
+    .item p{
+      margin-left: 40px;
+    }
+    .item{
+      padding: 10px;
+    }
+    .basdepage p{
+      color: white;
+    }
+    .abou {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+    a{
+      text-decoration: none;
+    }
+    .bas{
+      background-color: rgb(37, 37, 37);
+    }
+    .c{
+      background-color: rgb(37, 37, 37);
+      color: white;
+      margin-bottom: 10px;
+    }
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

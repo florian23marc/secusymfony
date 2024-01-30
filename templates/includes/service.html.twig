@@ -1,0 +1,26 @@
+<!--Partie sur nos Services -->
+<div class="container-fluid services py-0">
+  <div class="container py-3">
+    <div class="mx-auto text-center mb-5" style="max-width: 800px;"></div>
+    <div class="text-uppercase text-center">
+                <h5 class="orange">NOS SERVICES</h5>
+                <h2>SERVICES DE SECURITE HAUT DE GAMME</h2>         
+    </div>
+  </div>
+    <div class="row pb-3  m-4">
+        {% for Service in service %}
+            {% if Service %}
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-2 p-3">
+                        <img class="card-img-top" src="{{ asset('uploads/' ~ Service.illustration) }}" alt="{{ Service.illustration }}" >
+                            <div class="card-body bg-secondary d-flex align-items-center p-0 block">
+                                <h3 class=" {{ Service.icon }} font-weight-normal flati d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                                <h6 class="card-title text-white text-truncate m-0 ">{{ Service.illustrationTitle }}</h6>
+                            </div>
+                    <div class="card-footer">{{ Service.description | raw }}</div>
+                </div> 
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+  </div>

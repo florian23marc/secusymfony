@@ -1,0 +1,33 @@
+ <!--Partie sur Blog récent-->
+        <div class="container-fluid services py-0">
+          <div class="container py-3">
+            <div class="mx-auto text-center mb-5" style="max-width: 800px;"></div>
+            <div class="text-uppercase text-center">
+              <h5 class="orange">BLOG RECENT</h5>
+              <h2>DERNIERES NOUVEAUTES DE NOTRE BLOG</h2>
+            </div>
+          </div>
+            <div class="row pb-3  m-4">
+              {% for Blog in blog %}
+                {% if Blog %}
+              <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-2 p-3">
+                    <img src="{{ asset('uploads/' ~ Blog.illustration) }}" alt="{{ Blog.illustration }}" class="card-img-top img-fluid">
+                    <h6 class="card-title bg-dark text-white text-center">{{ Blog.illustrationTitle }}<span><i
+                            class="fa-solid fa-link hero"></i></span></h6>
+                    <div class="admin">
+                        <i class="fa-solid fa-user"></i>
+                        <p>{{ Blog.iconLink }}</p>
+                        <i class="fa-solid fa-folder"></i>
+                        <p>{{ Blog.authorIcon }}</p>
+                        <i class="fa-solid fa-comments"></i>
+                        <p>{{ Blog.category }}</p>
+                    </div>
+                    <p class="card-text">{{ Blog.iconCategory }}</p>
+                    </div>
+              </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+      </section>
